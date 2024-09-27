@@ -1,0 +1,91 @@
+<html>
+  <head>
+<style>
+  p{
+    text-align: justify;
+    margin-left: 5px;
+    font-size: x-large;
+    margin-bottom: 35px;
+  }
+  img{
+    margin-right: 70px;
+    margin-left: 70px;
+    
+    
+  }
+  span{
+
+    margin-left: 50%;
+  }
+div{
+text-align: center;
+margin: 50px;
+}
+  pre{
+    text-align: justify;
+    font-size: 18px;
+  }
+  class{
+    margin-left: 15px;
+  }
+  h2{
+    margin-top: 20px;
+  }
+</style>
+  </head>
+  <body>
+
+<h1>Breadth First Search:</h1>
+<p>
+ <class>
+   BreadthFirst</class> Search (BFS) is a fundamental graph traversal algorithm. It begins with a node, then first traverses all its adjacent. Once all adjacent are visited, then their adjacent are traversed. This is different from DFS in a way that closest vertices are visited before others. We mainly traverse vertices level by level. A lot of popular graph algorithms like Dijkstra’s shortest path, Kahn’s Algorithm, and Prim’s algorithm are based on BFS. BFS itself can be used to detect cycle in a directed and undirected graph, find shortest path in an unweighted graph and many more problems.
+
+</p>
+
+<h2>BFS from a Given Source:</h2>
+
+<p>
+  <class>
+  The</class> algorithm starts from a given source and explores all reachable vertices from the given source. It is similar to the Breadth-First Traversal of a tree. Like tree, we begin with the given source (in tree, we begin with root) and traverse vertices level by level using a queue data structure. The only catch here is that, unlike trees, graphs may contain cycles, so we may come to the same node again. To avoid processing a node more than once, we use a boolean visited array.
+</p>
+
+<p>
+  Initialization: Enqueue the given source vertex into a queue and mark it as visited.
+
+
+</p>
+
+<h3>
+  Exploration: While the queue is not empty:
+</h3>
+<ul>
+  1)Dequeue a node from the queue and visit it (e.g., print its value).<br>
+2)For each unvisited neighbor of the dequeued node:
+</ul>
+<pre>
+<ul>
+  *Enqueue the neighbor into the queue.
+  *Mark the neighbor as visited.
+</ul>
+</pre>
+
+<h3>Termination: Repeat step 2 until the queue is empty.</h5>
+<p><class>
+  This </class>algorithm ensures that all nodes in the graph are visited in a breadth-first manner, starting from the starting node.
+</p>
+<h3>
+  How Does the BFS Algorithm Work?
+</h4>
+<img src="IMAGES/img1.webp">
+
+<span><img src="IMAGES/img2 .webp"></span>
+<img src="IMAGES/img3.webp">
+<span><img src="IMAGES/img4.webp"></span>
+<img src="IMAGES/img5.webp">
+<span><img src="IMAGES/img6.webp"></span>
+
+<img src="IMAGES/img7.webp">
+<div>
+<h1>Thank You!</h1></h3>
+  </body>
+</html>
